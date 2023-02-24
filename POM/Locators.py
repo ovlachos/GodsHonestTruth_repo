@@ -4,6 +4,6 @@ userPage_XPath = {
 }
 
 urls = {
-    "followers": "file:///C:/Users/OVlachos/Downloads/a.lens.pointed.at.you_20230223/followers_and_following/followers_1.html",
-    "following": "file:///C:/Users/OVlachos/Downloads/a.lens.pointed.at.you_20230223/followers_and_following/following.html",
+    "followers": "file:///Users/cortomaltese/Documents/GodsHonestTruth_repo/followers_and_following/followers_1.html",
+    "following": "file:///Users/cortomaltese/Documents/GodsHonestTruth_repo/followers_and_following/following.html",
 }

@@ -132,3 +132,11 @@ dmypy.json
 .idea/modules.xml
 
 BrowserSession.json
+
+.DS_Store
+
+.idea/inspectionProfiles/
+
+.idea/
+
+followers_and_following/

@@ -1,4 +1,5 @@
 from time import sleep
+import pandas as pd
 
 import Logger as logg
 from POM import Locators as loc
@@ -44,6 +45,12 @@ class MainPage:
             for user in self.following:
                 logg.logSmth(user)
 
+    def printInfidelsToCSV(self):
+        self.infidels = 0
+
+        # file = self.getFileFromFilename(filename)
+        # frame.to_csv(file['filepath'], index=False, encoding='utf-8')
+
     def getListOfInfidels(self):
         self.getListOfFollowers()
         self.getListOfFollowing()
@@ -51,6 +58,8 @@ class MainPage:
         if len(self.following) > 0 and len(self.followers) > 0:
             self.infidels = [x for x in self.following if x not in self.followers]
             if self.infidels:
+                print(self.infidels)
+                logg.logSmth(self.infidels)
                 logg.logSmth("\n***\n\n*** Infidels ***")
                 for user in self.infidels:
                     logg.logSmth(user)
